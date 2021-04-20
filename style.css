@@ -1,0 +1,189 @@
+* {
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(45deg, #222831, #393e46, #08595e, #2e5658);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#chronometer {
+    margin: 5px;
+    border: solid 1px white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+#btn-cronometro {
+    background-color: #393e46;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    font-family: system-ui;
+}
+
+.realRealModal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.realModal{
+    height: 300px;
+    width: 550px;
+    border-radius: 10px;
+    background: rgb(37,37,48);
+    background: linear-gradient(90deg, rgba(37,37,48,1) 0%, rgba(50,50,82,1) 35%, rgba(47,80,92,1) 100%);
+  }
+  
+  .congratulations {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 25px;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .scores {
+    width: 200px;
+    display: flex;
+    justify-content: space-between;;
+    align-items: center;
+  }
+  
+  .acertos {
+    padding: 5px;
+    color: white;
+    background: #2f5d62;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+  .erros {
+    padding: 5px;
+    color: white;
+    background: #db8b8b;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 20px;
+  }
+  
+
+#letter {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 15px;
+    height: 57.78px;
+    color: white;
+}
+
+.button-restart{
+    margin-top: 10%;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    background: rgb(99 131 79) 35%;
+    color: white;
+    outline: none;
+}
+
+.fatherDiv {
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.backgroundKeyboard{
+    background-color: #52616b;
+    height: 450px;
+    width: 900px; 
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.backgroundInsideKeyboard {
+    background-color: rgb(41, 40, 46);
+    height: 90%;
+    width: 97%;
+    margin: 20px 10px 0px 10px;
+    display: flex;
+    justify-content: space-around
+}
+
+.key {
+    width: 40px;
+    height: 45px;
+    margin: 2px;
+    border-width: 3px 7px 10px;
+    border-style: solid;
+    border-radius: 4px;
+    float: left;
+    margin: 10px;
+    background-color: white;
+    border-color: #e7e6e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.backspace {
+    width: 500px;
+    height: 45px;
+    margin: 2px;
+    border-width: 3px 7px 10px;
+    border-style: solid;
+    border-radius: 4px;
+    float: left;
+    margin: 10px;
+    background-color: white;
+    border-color: #e7e6e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#score {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: monospace;
+    color: wheat;
+}
