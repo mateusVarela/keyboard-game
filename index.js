@@ -1,8 +1,5 @@
 const startMinutes = 1
 let time = startMinutes * 60
-
-const chronometer = document.getElementById('chronometer')
-
 const fatherDiv = $('#fatherDiv')
 const score = $('#score')
 
@@ -11,6 +8,7 @@ const score = $('#score')
  */
 function start(){
     function updateCountDown() {
+        const chronometer = document.getElementById('chronometer')
         const minutes = Math.floor(time / 60)
         const timeNormalized = time < 0 ? 0 : time;
         const seconds = timeNormalized % 60
@@ -66,7 +64,6 @@ document.onkeypress = function(e) {
     const str = keyPressed(e);
     const lastLetter = str.split("").pop();
     const letterIs = document.getElementById('letter').getAttribute('letteris')
-    console.log(letterIs.toLocaleLowerCase());
     lastLetter == letterIs.toLowerCase() ? acerto++ : erros++
 	$("#score").html(`acertos: ${acerto} erros: ${erros}`);
 };

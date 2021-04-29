@@ -42,14 +42,14 @@ body {
     font-family: system-ui;
 }
 
-.realRealModal {
+.modal {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 90vh;
 }
 
-.realModal{
+.modalContent{
     height: 300px;
     width: 550px;
     border-radius: 10px;
@@ -64,13 +64,13 @@ body {
     font-size: 25px;
   }
   
-  .modal {
+  .points {
     display: flex;
     justify-content: center;
     align-items: center;
   }
   
-  .scores {
+  .score-modal {
     width: 200px;
     display: flex;
     justify-content: space-between;;
